@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login Kit.Android", "Login 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login Kit.iOS", "Login Kit\Login Kit.iOS\Login Kit.iOS.csproj", "{420581D7-E909-4FE8-9C38-811825A2D2D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login Kit", "Login Kit\Login Kit\Login Kit.csproj", "{A5D45F7B-7602-496B-B9C4-0B709F414E31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Login Kit", "Login Kit\Login Kit\Login Kit.csproj", "{A5D45F7B-7602-496B-B9C4-0B709F414E31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

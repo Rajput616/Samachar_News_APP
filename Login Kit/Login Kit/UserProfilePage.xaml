@@ -40,7 +40,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Padding="0,0,0,50">
                     <Image Source="Thanks.png" HeightRequest="50" WidthRequest="50" />
-                    <Label Text="Thankyou for using Our App" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="20" FontFamily="OpenSans-Regular"/>
+                    <Label Text="Thankyou for using Our App" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="18" FontFamily="OpenSans-Regular"/>
                 </StackLayout>
             </StackLayout>
             <Button Text="LogOut"

@@ -45,7 +45,7 @@ namespace Login_Kit
             }
             else
             {
-                if (UsernameSU.Text.Equals(Application.Current.Properties["Username"]))
+                if (Application.Current.Properties != null && Application.Current.Properties.ContainsKey("Username") && UsernameSU.Text.Equals(Application.Current.Properties["Username"]))
                 {
                     await DisplayAlert("Info", "Username already present, Please Login", "OK");
                 }
