@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Kit.UserProfilePage"
+             BackgroundColor="#596bda"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.1"
+                         AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image x:Name="genderImage"  Source="userMale.png"/>
+                <Label x:Name="firstName" TextColor="White" HorizontalOptions="Center" FontSize="25"
+                       FontFamily="OpenSans-Bold"/>
+                <AbsoluteLayout>
+                    <BoxView 
+                        CornerRadius="50" BackgroundColor="White" WidthRequest="160"/>
+                    <Label x:Name="gender_button" TextColor="#596bda" FontFamily="OpenSans-Bold" AbsoluteLayout.LayoutBounds="0.5,0.5"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                </AbsoluteLayout>
+                
+            </StackLayout>
+            <BoxView Color="White" AbsoluteLayout.LayoutBounds="0, 1, 1,0.65"
+                     AbsoluteLayout.LayoutFlags="All"
+                     CornerRadius="30,30,0,0"/>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.7, 0.8, 0.4"
+                     AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,10">
+                    <Image Source="nameIcon.png" HeightRequest="50" WidthRequest="50" />
+                    <Label x:Name="fullName" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="25" FontFamily="OpenSans-Regular"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,10">
+                    <Image Source="email.png" HeightRequest="50" WidthRequest="50"  />
+                    <Label x:Name="Email" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="18" FontFamily="OpenSans-Regular"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,10">
+                    <Image Source="phone.png" HeightRequest="50" WidthRequest="50"  />
+                    <Label x:Name="phoneNo" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="25" FontFamily="OpenSans-Regular"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,50">
+                    <Image Source="Thanks.png" HeightRequest="50" WidthRequest="50" />
+                    <Label Text="Thankyou for using Our App" TextColor="#596bda" VerticalTextAlignment="Center" FontSize="20" FontFamily="OpenSans-Regular"/>
+                </StackLayout>
+            </StackLayout>
+            <Button Text="LogOut"
+                    AbsoluteLayout.LayoutBounds="0.5,0.92,0.8,0.07"
+                    AbsoluteLayout.LayoutFlags="All"
+                        CornerRadius="50"  
+                        BackgroundColor="#596bda" 
+                        TextColor="White" 
+                        FontFamily="OpenSans-Bold"
+                        TextTransform="None"
+                        Clicked="Button_Clicked_1"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

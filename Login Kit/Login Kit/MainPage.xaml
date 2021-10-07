@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Kit.MainPage" 
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="Center"
+                 Padding="40,0,40,0">
+        <Image Source="Img.png" 
+               Aspect="AspectFit"/>
+
+        <StackLayout Padding="0, 30, 0, 30">
+            <Label Text="Welcome!" 
+                   FontFamily="OpenSans-Bold" 
+                   TextColor="#02110F" 
+                   FontAttributes="Bold" 
+                   FontSize="40" />
+            <Label Text="Log in with your data that you entered "  
+                   FontFamily="OpenSans-Bold"/>
+            <Label Text="during your registration" 
+                   FontFamily="OpenSans-Bold" />
+        </StackLayout>
+
+        <StackLayout>
+            <Button Text="Sign Up" 
+                    CornerRadius="50"  
+                    BackgroundColor="#596bda" 
+                    TextColor="White" 
+                    FontFamily="OpenSans-Bold"
+                    TextTransform="None"
+                    Clicked="SignUp_Clicked"/>
+            <Button  Text="Sign In" 
+                     CornerRadius="50" 
+                     TextColor="Black"  
+                     BackgroundColor="White" 
+                     BorderWidth="1" 
+                     BorderColor="#596bda" 
+                     FontFamily="OpenSans-Bold"
+                     TextTransform="None"
+                     Clicked="SignIn_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

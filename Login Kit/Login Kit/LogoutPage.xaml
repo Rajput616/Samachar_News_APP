@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Kit.LogoutPage"
+             BackgroundColor="#598bda" 
+             NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout>
+        <BoxView Color="White" CornerRadius="30" 
+                 AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.8, 0.6"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        <StackLayout 
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.6, 0.5"
+            AbsoluteLayout.LayoutFlags="All">
+            <Image Source="LogOut.png" />
+            <Label Text="Oh no! You're leaving..." 
+                   FontSize="18" 
+                   FontFamily="OpenSans-Bold" 
+                   HorizontalOptions="Center" 
+                   Padding="0,20,0,0"/>
+            <Label Text="Are you sure?" 
+                   HorizontalOptions="Center" 
+                   FontFamily="OpenSans-Bold" 
+                   FontSize="18" 
+                   Padding="0,0,0,20" />
+            <Button Text="Naah, Just Kidding"
+                    CornerRadius="50"  
+                    Clicked="Kidding_Clicked"
+                    BackgroundColor="#596bda" 
+                    TextColor="White" 
+                    FontFamily="OpenSans-Bold"
+                    TextTransform="None"/>
+            <Button Text="Yes, Log Me Out"
+                    CornerRadius="50" 
+                    Clicked="LogOut_Clicked"
+                     TextColor="#596bda"  
+                     BackgroundColor="White" 
+                     BorderWidth="1" 
+                     BorderColor="#596bda" 
+                     FontFamily="OpenSans-Bold"
+                     TextTransform="None"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

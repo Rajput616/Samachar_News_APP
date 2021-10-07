@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Kit.SignUp" BackgroundColor="#eeeef9"
+             NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout>
+        <BoxView Color="White" 
+                 CornerRadius="0,0,0,60"
+                 AbsoluteLayout.LayoutBounds="0,0,1,0.18" 
+                 AbsoluteLayout.LayoutFlags="PositionProportional,SizeProportional" />
+        <Label Text="New Account" 
+               FontSize="33"
+               AbsoluteLayout.LayoutBounds="0.09,0.05"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               FontFamily="OpenSans-Regular"
+               TextColor="#596bda"
+               />
+        <Label Text="Sign up and get started" 
+               FontSize="16"
+               TextColor="Black"
+                FontFamily="OpenSans-Regular"
+               AbsoluteLayout.LayoutBounds="0.099,0.1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Label Text="Email" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.099,0.22"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.5,0.26,0.85,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Entry Placeholder="Enter email.." FontFamily="OpenSans-Regular"
+               x:Name="UsernameSU"
+               AbsoluteLayout.LayoutBounds="0.5,0.26,0.7,50"
+               Keyboard="Email"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Label Text="First-Name" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.099,0.34"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.12,0.385,0.42,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Entry Placeholder="first_name" FontFamily="OpenSans-Regular"
+               x:Name="first_nameSU"
+               AbsoluteLayout.LayoutBounds="0.15,0.387,0.34,40"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Label Text="Last-Name" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.62,0.34"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.87,0.385,0.42,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Entry Placeholder="last_name" FontFamily="OpenSans-Regular"
+               x:Name="last_nameSU"
+               AbsoluteLayout.LayoutBounds="0.82,0.387,0.34,40"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Label Text="Password" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.099,0.455"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.5,0.505,0.85,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Entry Placeholder="Enter password.." FontFamily="OpenSans-Regular"
+               x:Name="PasswordSU"
+               IsPassword="True"
+               AbsoluteLayout.LayoutBounds="0.5,0.50,0.7,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Label Text="Phone" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.099,0.565"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.5,0.62,0.85,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Entry Placeholder="Enter phone no.." FontFamily="OpenSans-Regular"
+               x:Name="PhoneSU"
+               AbsoluteLayout.LayoutBounds="0.5,0.615,0.7,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Label Text="Select Gender" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.099,0.68"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="White"
+                 CornerRadius="30"
+                 AbsoluteLayout.LayoutBounds="0.5,0.74,0.85,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Picker Title="Select Gender" 
+                x:Name="Gender_pickerSU"
+                TitleColor="Gray"
+                AbsoluteLayout.LayoutBounds="0.5,0.738,0.7,50"
+               AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional">
+            <Picker.Items>
+                <x:String>Male</x:String>
+                <x:String>Female</x:String>
+                <x:String>Others</x:String>
+            </Picker.Items>
+        </Picker>
+
+
+        <Button Text="Sign Up" 
+                Clicked="SignUp_Clicked"
+                CornerRadius="50"  
+                BackgroundColor="#596bda" 
+                TextColor="White" 
+                FontFamily="OpenSans-Bold"
+                TextTransform="None"
+                AbsoluteLayout.LayoutBounds="0.5,0.855,0.85,0.07"
+                AbsoluteLayout.LayoutFlags="All"/>
+        <Label Text="Or Login " TextColor="#596bda" FontFamily="OpenSans-Bold"
+               AbsoluteLayout.LayoutBounds="0.5,0.905"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Button  Text="Sign In" 
+                 Clicked="SignIn_Clicked"
+                 CornerRadius="50" 
+                 TextColor="Black"  
+                 BackgroundColor="#eeeef9" 
+                 BorderWidth="1" 
+                 BorderColor="#596bda" 
+                 FontFamily="OpenSans-Bold"
+                 TextTransform="None"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.98, 0.85,0.07"
+                AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+</ContentPage>
